@@ -1,0 +1,25 @@
+/*! Responsive styles. (responsive.css) | @author webtitov.ru */
+
+/* Laptop */
+@media (max-width: 1140px) {
+
+}
+
+/* Tablet */
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+/* Phone */
+@media (max-width: 575px) {
+
+}
+
+/* Phone - 320px */
+@media (max-width: 374px) {
+
+}
