@@ -10,6 +10,8 @@
   <meta name="format-detection" content="telephone=no"/>
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
   
+  <title>L-STUDIO</title>
+  
   <!-- FAVICON -->
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
   
@@ -19,44 +21,35 @@
   <link rel="stylesheet" href="css/theme.css?ver=1.1.2" type="text/css" media="all">
   <link rel="stylesheet" href="style.css?ver=1.1.7" type="text/css" media="all">
   <link rel="stylesheet" href="css/responsive.css?ver=1.1.5" type="text/css" media="all">
+  <link rel="stylesheet" href="css/swiper.min.css" type="text/css" media="all">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-  <div class="header-top">
-    <div class="theme-wrapper header-top__wrapper">
-      <a href="/" class="header-wrapper__logo" title="На главную">
-        <img src="img/logo-rustent.png" alt="РУСТЕНТ - Логотип" class="header-logo__img">
-        <span class="header-logo__text">Производство и продажа шатров и тентовых конструкций</span>
+  <div class="theme-wrapper header-wrapper">
+    <a href="/" class="header-wrapper__logo">
+      <img src="img/logo-l-studio.png" alt="L-STUDIO - Логотип" class="header-logo__img">
+    </a>
+    <nav class="header-wrapper__nav">
+      <a href="#" class="header-nav__item --active-item">Главная</a>
+      <a href="#" class="header-nav__item">О нас</a>
+      <a href="#" class="header-nav__item">Услуги</a>
+      <a href="#" class="header-nav__item">Прайс</a>
+      <a href="#" class="header-nav__item">Наши работы</a>
+      <a href="#" class="header-nav__item">Блог</a>
+      <a href="#" class="header-nav__item">Контакты</a>
+    </nav>
+    <div class="header-wrapper__actions">
+      <a href="#" class="header-actions__whatsapp">
+        <span class="header-whatsapp__phone">+7(985)290-36-59 </span>
+        <span class="header-whatsapp__text">Номер для записи</span>
       </a>
-      <p class="header-wrapper__time">
-        <span class="header-time__title">Время работы:</span>
-        <span class="header-time__text">9:00 – 21:00 Ежедневно</span>
-      </p>
-      <div class="header-wrapper__phones">
-        <a href="tel:+78007700028" class="header-phones__item">+7 800 770-00-28</a>
-        <a href="tel:+74959607007" class="header-phones__item">+7 495 960-70-07</a>
-      </div>
-      <a href="" class="theme-button header-wrapper__button">
+      <a href="#" class="theme-button header-actions__button">
         <span class="theme-button__text">Заказать звонок</span>
       </a>
-    </div>
-  </div>
-  <div class="header-bottom">
-    <div class="theme-wrapper header-bottom__wrapper">
-      <nav class="header-wrapper__nav">
-        <a href="#" class="header-nav__item --active-item">ГЛАВНАЯ</a>
-        <a href="#" class="header-nav__item --with-arrow">КАТАЛОГ</a>
-        <a href="#" class="header-nav__item --with-arrow">ДОП УСЛУГИ</a>
-        <a href="#" class="header-nav__item --with-arrow">ГОТОВЫЕ РЕШЕНИЯ</a>
-        <a href="#" class="header-nav__item">АРЕНДА</a>
-        <a href="#" class="header-nav__item">НАШИ РАБОТЫ</a>
-        <a href="#" class="header-nav__item">О НАС</a>
-        <a href="#" class="header-nav__item">КОНТАКТЫ</a>
-        <div class="header-nav__socials">
-          <a href="#" class="header-socials__item --socials-wa"></a>
-          <a href="#" class="header-socials__item --socials-tg"></a>
-        </div>
-      </nav>
     </div>
   </div>
 </header>
@@ -65,71 +58,186 @@
   <section class="intro">
     <div class="theme-wrapper intro-wrapper">
       <div class="intro-wrapper__content">
-        <h1 class="intro-content__heading">Производство тентовых конструкций</h1>
-        <ul class="intro-content__list">
-          <li class="intro-list__item">Монтаж по всей России</li>
-          <li class="intro-list__item">Круглогодичное использование</li>
-        </ul>
-        <div class="intro-content__actions">
-          <a href="#" class="theme-button">
-            <span class="theme-button__text">Получить консультацию</span>
-          </a>
-          <a href="#" class="theme-button --secondary-button">
-            <span class="theme-button__text">Узнать подробнее</span>
-          </a>
-        </div>
-      </div>
-      <div class="intro-wrapper__benefits">
-        <div class="intro-benefits__item">Проектируем тентовые конструкции под ваш климатический регион</div>
-        <div class="intro-benefits__item">Собственный производственный комплекс расположенный в г. Москва</div>
-        <div class="intro-benefits__item">Изготавливаем шатры с 2008 года. Работаем только с качественными материалами</div>
-        <div class="intro-benefits__item">Осуществляем поставку и строительство тентовых конструкций по всему миру</div>
+        <h1 class="intro-content__title">Центр косметологии<br/> от <span>L-STUDIO</span></h1>
+        <p class="intro-content__text">Красота и молодость - желание каждой женщины. <br/>Мы предлагаем широки спектр услуг высокого <br/>качества, связанных с красотой</p>
+        <a href="#" class="intro-content__button theme-button">
+          <span class="theme-button__text">Записаться на процедуру</span>
+        </a>
       </div>
     </div>
   </section>
   <!-- About -->
   <section class="about">
     <div class="theme-wrapper about-wrapper">
-      <h2 class="theme-headline about-wrapper__headline">О нашей компании</h2>
-      <div class="about-wrapper__item">
-        <img src="img/about-1.jpg" alt="РУСТЕНТ - О компании" class="about-item__image">
-        <div class="about-item__content">
-          <span class="about-content__bg">О нас</span>
-          <p class="about-content__text theme-text">Красота заключается в простом. Настоящая красота не является отсутствием сложных элементов – это нечто большее…</p>
-          <p class="about-content__text theme-text">Создавая тентовую архитектуру – мы придерживаемся этих правил. Мы развиваемся и стремимся быть лучшими.</p>
-          <p class="about-content__text theme-text">Каждая конструкция это своя оконченная форма. Форма металла и тента под властью инженерной мысли. Мы научились управлять формами и познали тентовую архитектуру.</p>
+      <h2 class="theme-headline about-wrapper__headline">О нас</h2>
+      <div class="about-wrapper__grid">
+        <div class="about-grid__item">
+          <img src="img/about-1.jpg" alt="L-STUDIO - О нашем салоне" class="about-item__img">
+          <div class="about-item__content">
+            <h3 class="about-content__heading">О салоне красоты <span>L-STUDIO</span></h3>
+            <p class="about-content__text theme-text">Сколько раз ты попадала в ситуации, когда надо быстро привести себя в порядок, а в салоне очередь на две недели вперед? Внезапно пригласили на вечеринку, неожиданное свидание, билет в театр подарили, а выглядишь после рабочего дня, мягко говоря – не свежей. Не беда! Подъезжай к нам в L-studio!</p>
+            <p class="about-content__text theme-text">Макияж, легкий брашинг, локоны, капля свежего аромата, бокал шампанского и вуа-ля – ты прекрасна и готова производить впечатление!</p>
+          </div>
+        </div>
+        <div class="about-grid__item --about-item-bottom">
+          <div class="about-item__content">
+            <p class="about-content__text theme-text">Салон красоты “L-STUDIO” открывает двери для прекрасной половины населения и мужчин. Комфортная атмосфера, дизайнерский интерьер, творческий подход к клиентам - все это предлагают наши специалисты</p>
+            <img src="img/about-2.jpg" alt="L-STUDIO - О нашем салоне" class="about-content__img">
+          </div>
+          <img src="img/about-3.jpg" alt="L-STUDIO - О нашем салоне" class="about-item__img">
         </div>
       </div>
-      <div class="about-wrapper__item --img-right">
-        <img src="img/about-2.jpg" alt="РУСТЕНТ - О компании" class="about-item__image">
-        <div class="about-item__content">
-          <span class="about-content__bg">О нас</span>
-          <p class="about-content__text theme-text">Красота заключается в простом. Настоящая красота не является отсутствием сложных элементов – это нечто большее…</p>
-          <p class="about-content__text theme-text">Создавая тентовую архитектуру – мы придерживаемся этих правил. Мы развиваемся и стремимся быть лучшими.</p>
-          <p class="about-content__text theme-text">Каждая конструкция это своя оконченная форма. Форма металла и тента под властью инженерной мысли. Мы научились управлять формами и познали тентовую архитектуру.</p>
+      <a href="#" class="about-wrapper__button theme-button">
+        <span class="theme-button__text">Подробнее о нашем салоне</span>
+      </a>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="services">
+    <div class="theme-wrapper services-wrapper">
+      <h2 class="theme-headline services-wrapper__headline"><span>Наши услуги в</span> L-STUDIO</h2>
+      <div class="services-wrapper__grid">
+        <a href="#" class="services-grid__item">
+          <img src="img/service-1.jpg" alt="L-STUDIO - Парикмахерские услуги" class="services-item__cover">
+          <h2 class="services-item__title">Парикмахерские услуги</h2>
+        </a>
+        <a href="#" class="services-grid__item">
+          <img src="img/service-2.jpg" alt="L-STUDIO - Брови, ресницы" class="services-item__cover">
+          <h2 class="services-item__title">Брови, ресницы</h2>
+        </a>
+        <a href="#" class="services-grid__item">
+          <img src="img/service-3.jpg" alt="L-STUDIO - Маникюр и педикюр" class="services-item__cover">
+          <h2 class="services-item__title">Маникюр и педикюр</h2>
+        </a>
+        <a href="#" class="services-grid__item">
+          <img src="img/service-4.jpg" alt="L-STUDIO - Косметология" class="services-item__cover">
+          <h2 class="services-item__title">Косметология</h2>
+        </a>
+        <a href="#" class="services-grid__item">
+          <img src="img/service-5.jpg" alt="L-STUDIO - Эпиляция и депиляция" class="services-item__cover">
+          <h2 class="services-item__title">Эпиляция и депиляция</h2>
+        </a>
+        <a href="#" class="services-grid__item">
+          <img src="img/service-6.jpg" alt="L-STUDIO - Макияж" class="services-item__cover">
+          <h2 class="services-item__title">Макияж</h2>
+        </a>
+      </div>
+      <a href="#" class="services-wrapper__button theme-button">
+        <span class="theme-button__text">Посмотреть все услуги</span>
+      </a>
+    </div>
+  </section>
+  <!-- Promo -->
+  <section class="promo">
+    <div class="theme-wrapper promo-wrapper">
+      <h2 class="theme-headline promo-wrapper__headline"><span>Наши акции</span></h2>
+      <div class="swiper promo-wrapper__box" id="promo_carousel">
+        <div class="swiper-wrapper">
+          <!-- Promo item -->
+          <div class="swiper-slide promo-box__item">
+            <img src="img/sale-1.png" alt="L-STUDIO - Акция" class="promo-item__cover">
+          </div>
+          <!-- Promo item -->
+          <div class="swiper-slide promo-box__item">
+            <img src="img/sale-1.png" alt="L-STUDIO - Акция" class="promo-item__cover">
+          </div>
+          <!-- Promo item -->
+          <div class="swiper-slide promo-box__item">
+            <img src="img/sale-1.png" alt="L-STUDIO - Акция" class="promo-item__cover">
+          </div>
+          <!-- Promo item -->
+          <div class="swiper-slide promo-box__item">
+            <img src="img/sale-1.png" alt="L-STUDIO - Акция" class="promo-item__cover">
+          </div>
+          <!-- Promo item -->
+          <div class="swiper-slide promo-box__item">
+            <img src="img/sale-1.png" alt="L-STUDIO - Акция" class="promo-item__cover">
+          </div>
+        </div>
+        <div class="swiper-pagination promo-box__pagination"></div>
+      </div>
+      <div class="swiper-button-prev promo-arrow__button promo-arrows__prev"></div>
+      <div class="swiper-button-next promo-arrow__button promo-arrows__next"></div>
+      <a href="#" class="promo-wrapper__button theme-button">
+        <span class="theme-button__text">Посмотреть все акции</span>
+      </a>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="cta">
+    <div class="theme-wrapper cta-wrapper">
+      <div class="cta-wrapper__content">
+        <h2 class="cta-content__headline">Не знаете какая процедура <br/>подойдёт вам?</h2>
+        <p class="cta-content__text">Заполните форму для бесплатной консультации и <br/>наш сотрудник свяжется с вами в ближайшее время</p>
+        <form class="cta-content__form ajax-form" method="post">
+          <input type="text" class="cta-form__input" name="form_name" id="cta_name" placeholder="Введите имя">
+          <input required type="tel" class="cta-form__input" name="form_phone" id="cta_phone" placeholder="Введите номер телефона">
+          <button type="submit" class="theme-button cta-form__submit">
+            <span class="theme-button__text">Оставить заявку</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Blog -->
+  <section class="blog">
+    <div class="theme-wrapper blog-wrapper">
+      <h2 class="theme-headline blog-wrapper__headline"><span>Наши новости</span></h2>
+      <div class="blog-wrapper__grid">
+        <div class="blog-grid__item">
+          <img src="img/news-1.jpg" alt="L-STUDIO - Как ухаживать за своей кожей в 2023 году?" class="blog-item__img">
+          <span class="blog-item__category">Красота</span>
+          <h3 class="blog-item__title">Как ухаживать за своей кожей в 2023 году?</h3>
+          <p class="blog-item__description">Сколько раз ты попадала в ситуации, когда надо быстро привести себя в порядок, а в салоне очередь на две недели вперед? Внезапно пригласили на вечеринку, неожиданное свидание, билет в театр подарили, а выглядишь после рабочего дня, мягко говоря – не свежей. Не беда!</p>
+          <a href="#" class="blog-item__link">Читать статью полностью</a>
+        </div>
+        <div class="blog-grid__item">
+          <img src="img/news-2.jpg" alt="L-STUDIO - Какой макияж наносить в 2023 году?" class="blog-item__img">
+          <span class="blog-item__category">Красота</span>
+          <h3 class="blog-item__title">Какой макияж наносить в 2023 году?</h3>
+          <p class="blog-item__description">Сколько раз ты попадала в ситуации, когда надо быстро привести себя в порядок, а в салоне очередь на две недели вперед? Внезапно пригласили на вечеринку, неожиданное свидание, билет в театр подарили, а выглядишь после рабочего дня, мягко говоря – не свежей. Не беда!</p>
+          <a href="#" class="blog-item__link">Читать статью полностью</a>
+        </div>
+        <div class="blog-grid__item">
+          <img src="img/news-3.jpg" alt="L-STUDIO - Локоны или прямые волосы?частый вопрос у девушек." class="blog-item__img">
+          <span class="blog-item__category">Красота</span>
+          <h3 class="blog-item__title">Локоны или прямые волосы?частый вопрос у девушек.</h3>
+          <p class="blog-item__description">Сколько раз ты попадала в ситуации, когда надо быстро привести себя в порядок, а в салоне очередь на две недели вперед? Внезапно пригласили на вечеринку, неожиданное свидание, билет в театр подарили, а выглядишь после рабочего дня, мягко говоря – не свежей. Не беда!</p>
+          <a href="#" class="blog-item__link">Читать статью полностью</a>
         </div>
       </div>
     </div>
   </section>
-  <!-- Catalog -->
-  <!-- Types -->
-  <!-- Shater -->
-  <!-- 3D -->
-  <!-- Solutions -->
-  <!-- Portfolio -->
-  <!-- Video -->
-  <!-- CTA -->
-  <!-- Rent -->
-  <!-- Media block -->
-  <!-- Extra -->
+  <!-- Contacts -->
+  <section class="contacts">
+    <div class="theme-wrapper contacts-wrapper">
+      <div class="contacts-wrapper__content">
+        <div class="contacts-content__info">
+          <h2 class="contacts-info__headline">Контакты</h2>
+          <p class="contacts-info__item --info-item-address">Дмитровское шоссе, 9, строение 3.<br/> Россия, г. Москва</p>
+          <p class="contacts-info__item --info-item-phone">+7 (985) 290-36-59&nbsp;&nbsp;&nbsp;&nbsp;+7 (499) 976-13-22</p>
+          <p class="contacts-info__item --info-item-mail">l-studio@lenta.ru</p>
+          <p class="contacts-info__item --info-item-time">Понедельник-Воскресенье, с 10:00 до 22:00</p>
+          <div class="contacts-info__socials">
+            <span class="contacts-socials__title">Подписывайся на наши соц сети:</span>
+            <div class="contacts-socials__box">
+              <a href="#" class="contacts-socials__item --socials-vk"></a>
+              <a href="#" class="contacts-socials__item --socials-yt"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/map-placeholder.jpg" alt="" class="contacts-wrapper__map">
+    </div>
+  </section>
 </main>
 <footer>
-  <div class="theme-wrapper footer-wrapper__top">
-  
-  </div>
-  <div class="theme-wrapper footer-wrapper__bottom">
-  
-  </div>
+
 </footer>
+
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript' src='js/jquery.mask.min.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/main.js?ver=1.1.0'></script>
 </body>
 </html>

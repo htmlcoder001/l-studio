@@ -1,15 +1,15 @@
 /*! Theme styles. (theme.css) | @author webtitov.ru */
 :root {
   /* colors */
-  --theme-color: #0090F3;
-  --hover-color: #32a3f8;
-  --bg-dark-color: #082340;
+  --theme-color: #1B6143;
+  --hover-color: #437e5b;
   /* typography */
-  --theme-font: 'Geometria', sans-serif;
+  --theme-font: 'Mont', sans-serif;
+  --theme-secondary-font: 'Forum';
   /* else */
   --website-width: 1140px;
   --padding-h: 0; /* horizontal padding */
-  --padding-v: 64px; /* vertical padding */
+  --padding-v: 32px; /* vertical padding */
 }
 
 body {
@@ -36,12 +36,16 @@ body {
   display: block;
   width: 100%;
   text-align: center;
-  font-family: var(--theme-font);
+  font-family: var(--theme-secondary-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 63px;
-  color: #343434;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 77px;
+  color: #1B6143;
+  text-transform: uppercase;
+}
+.theme-headline > span {
+  color: #232323
 }
 
 
@@ -49,23 +53,23 @@ body {
 .theme-text {
   font-family: var(--theme-font);
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #EAEAEA;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 147.3%;
+  color: #6B6B6B;
   margin: 0;
 }
 
 /* Theme button */
 .theme-button,
 .theme-button:focus {
-  width: 270px;
+  width: 290px;
   height: 71px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
