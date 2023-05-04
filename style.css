@@ -450,6 +450,7 @@ header {
   background-repeat: no-repeat;
   background-position: right center;
   background-image: url(img/cta.png);
+  margin: 32px 0;
 }
 .cta-wrapper {
   height: 100%;
