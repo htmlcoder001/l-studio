@@ -36,14 +36,19 @@
     </a>
     <nav class="header-wrapper__nav">
       <a href="index.html" class="header-nav__item --active-item">Главная</a>
-      <a href="#" class="header-nav__item">О нас</a>
+      <a href="about.html" class="header-nav__item">О нас</a>
       <a href="services.html" class="header-nav__item">Услуги</a>
-      <a href="#" class="header-nav__item">Прайс</a>
+      <a href="price.html" class="header-nav__item">Прайс</a>
       <a href="#" class="header-nav__item">Наши работы</a>
       <a href="promos.html" class="header-nav__item">Акции</a>
       <a href="#contacts" class="header-nav__item">Контакты</a>
     </nav>
     <div class="header-wrapper__actions">
+      <div class="nav-toggle" data-modal-toggle="nav">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </div>
       <a href="#" class="header-actions__whatsapp">
         <span class="header-whatsapp__phone">+7(985)290-36-59 </span>
         <span class="header-whatsapp__text">Номер для записи</span>
@@ -88,7 +93,7 @@
           <img src="img/about-3.jpg" alt="L-STUDIO - О нашем салоне" class="about-item__img">
         </div>
       </div>
-      <a href="#" class="about-wrapper__button theme-button">
+      <a href="about.html" class="about-wrapper__button theme-button">
         <span class="theme-button__text">Подробнее о нашем салоне</span>
       </a>
     </div>
@@ -98,27 +103,27 @@
     <div class="theme-wrapper services-wrapper">
       <h2 class="theme-headline services-wrapper__headline"><span>Наши услуги в</span> L-STUDIO</h2>
       <div class="services-wrapper__grid">
-        <a href="#" class="services-grid__item">
+        <a href="price.html" class="services-grid__item">
           <img src="img/service-1.jpg" alt="L-STUDIO - Парикмахерские услуги" class="services-item__cover">
           <h2 class="services-item__title">Парикмахерские услуги</h2>
         </a>
-        <a href="#" class="services-grid__item">
+        <a href="price.html" class="services-grid__item">
           <img src="img/service-2.jpg" alt="L-STUDIO - Брови, ресницы" class="services-item__cover">
           <h2 class="services-item__title">Брови, ресницы</h2>
         </a>
-        <a href="#" class="services-grid__item">
+        <a href="price.html" class="services-grid__item">
           <img src="img/service-3.jpg" alt="L-STUDIO - Маникюр и педикюр" class="services-item__cover">
           <h2 class="services-item__title">Маникюр и педикюр</h2>
         </a>
-        <a href="#" class="services-grid__item">
+        <a href="price.html" class="services-grid__item">
           <img src="img/service-4.jpg" alt="L-STUDIO - Косметология" class="services-item__cover">
           <h2 class="services-item__title">Косметология</h2>
         </a>
-        <a href="#" class="services-grid__item">
+        <a href="price.html" class="services-grid__item">
           <img src="img/service-5.jpg" alt="L-STUDIO - Эпиляция и депиляция" class="services-item__cover">
           <h2 class="services-item__title">Эпиляция и депиляция</h2>
         </a>
-        <a href="#" class="services-grid__item">
+        <a href="price.html" class="services-grid__item">
           <img src="img/service-6.jpg" alt="L-STUDIO - Макияж" class="services-item__cover">
           <h2 class="services-item__title">Макияж</h2>
         </a>
@@ -206,6 +211,29 @@
 <footer>
 
 </footer>
+
+<div class="theme-overlay" data-modal-close></div>
+
+<div class="form-notification">
+  <p class="form-notification__text">Ваша заявка успешно отправлена!</p>
+  <p class="form-notification__text --error-text">Форма не отправлена. Поля заполненны некорректно.</p>
+</div>
+
+<div class="theme-modal" data-modal="nav">
+  <div class="theme-modal__head">
+    <span class="theme-modal__heading"></span>
+    <button type="button" class="theme-modal__close" data-modal-close>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" fill="none" viewBox="0 0 17 18">
+        <path stroke="#fff" stroke-linecap="round" d="m.707 1.021 15.314 16.272m-15.042 0L16.293 1.021"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="theme-modal__nav">
+  
+  </nav>
+  <a href="" class="theme-modal__phone" title="Позвоните нам"></a>
+  <a href="" class="theme-modal__phone" title="Позвоните нам"></a>
+</div>
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery.mask.min.js'></script>

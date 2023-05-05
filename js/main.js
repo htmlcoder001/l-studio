@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   WebT.elements = {
+    scroll_links: document.querySelectorAll('a[href^="#"]'),
     modal_toggle: document.querySelectorAll('[data-modal-toggle]'),
     modal_box: document.querySelectorAll('[data-modal]'),
     overlay: document.querySelector('.theme-overlay'),
@@ -110,6 +111,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   })();
 
+  /* Anchor smooth scroll */
+  (() => {
+    WebT.elements.scroll_links.forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        closeModals();
+        const offset = -30,
+          element = document.querySelector(this.getAttribute('href')),
+          target = element.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({top: target, behavior: 'smooth'});
+      });
+    });
+  })();
 
   /* AJAX form send */
   (() => {
