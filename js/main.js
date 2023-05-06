@@ -111,6 +111,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   })();
 
+  /* Promo carousel */
+  (() => {
+    let team_carousel =  '#team_carousel';
+    let swiper = new Swiper(team_carousel, {
+      spaceBetween: 20,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.team-arrows__next',
+        prevEl: '.team-arrows__prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        960: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 4
+        }
+      }
+    });
+  })();
+
   /* Anchor smooth scroll */
   (() => {
     WebT.elements.scroll_links.forEach(anchor => {
