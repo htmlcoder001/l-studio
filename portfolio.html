@@ -10,7 +10,7 @@
   <meta name="format-detection" content="telephone=no"/>
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
   
-  <title>Услуги | L-STUDIO</title>
+  <title>Наши работы | L-STUDIO</title>
   
   <!-- FAVICON -->
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
@@ -37,13 +37,18 @@
     <nav class="header-wrapper__nav">
       <a href="index.html" class="header-nav__item">Главная</a>
       <a href="about.html" class="header-nav__item">О нас</a>
-      <a href="services.html" class="header-nav__item --active-item">Услуги</a>
+      <a href="services.html" class="header-nav__item">Услуги</a>
       <a href="price.html" class="header-nav__item">Прайс</a>
-      <a href="portfolio.html" class="header-nav__item">Наши работы</a>
+      <a href="portfolio.html" class="header-nav__item --active-item">Наши работы</a>
       <a href="promos.html" class="header-nav__item">Акции</a>
       <a href="#contacts" class="header-nav__item">Контакты</a>
     </nav>
     <div class="header-wrapper__actions">
+      <div class="nav-toggle" data-modal-toggle="nav">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </div>
       <a href="#" class="header-actions__whatsapp">
         <span class="header-whatsapp__phone">+7(985)290-36-59 </span>
         <span class="header-whatsapp__text">Номер для записи</span>
@@ -67,60 +72,117 @@
       </div>
     </div>
   </section>
-  <!-- Services -->
-  <section class="services">
-    <div class="theme-wrapper services-wrapper">
-      <h2 class="theme-headline services-wrapper__headline"><span>Наши услуги в</span> L-STUDIO</h2>
-      <div class="services-wrapper__grid">
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-1.jpg" alt="L-STUDIO - Парикмахерские услуги" class="services-item__cover">
-          <h2 class="services-item__title">Парикмахерские услуги</h2>
+  <!-- Portfolio block -->
+  <section class="portfolio">
+    <div class="theme-wrapper portfolio-wrapper">
+      <h2 class="theme-headline portfolio-wrapper__headline"><span>Наши</span> работы</h2>
+      <p class="portfolio-wrapper__text">Мастера L-studio, их работы и, конечно же, любимые клиенты.</p>
+      <div class="portfolio-wrapper__grid">
+        <a href="img/portfolio/portfolio_1-1.jpg" class="portfolio-grid__item" data-fancybox="portfolio_1">
+          <img src="img/portfolio/portfolio_1-1.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-2.jpg" alt="L-STUDIO - Брови, ресницы" class="services-item__cover">
-          <h2 class="services-item__title">Брови, ресницы</h2>
+        <a href="img/portfolio/portfolio_1-2.jpg" class="portfolio-grid__item" data-fancybox="portfolio_1">
+          <img src="img/portfolio/portfolio_1-2.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-3.jpg" alt="L-STUDIO - Маникюр и педикюр" class="services-item__cover">
-          <h2 class="services-item__title">Маникюр и педикюр</h2>
+        <a href="img/portfolio/portfolio_1-3.jpg" class="portfolio-grid__item" data-fancybox="portfolio_1">
+          <img src="img/portfolio/portfolio_1-3.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-4.jpg" alt="L-STUDIO - Косметология" class="services-item__cover">
-          <h2 class="services-item__title">Косметология</h2>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio block -->
+  <section class="portfolio">
+    <div class="theme-wrapper portfolio-wrapper">
+      <h2 class="theme-headline portfolio-wrapper__headline">Макияж</h2>
+      <div class="portfolio-wrapper__grid">
+        <a href="img/portfolio/portfolio_2-1.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-1.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-5.jpg" alt="L-STUDIO - Эпиляция и депиляция" class="services-item__cover">
-          <h2 class="services-item__title">Эпиляция и депиляция</h2>
+        <a href="img/portfolio/portfolio_2-2.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-2.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-6.jpg" alt="L-STUDIO - Макияж" class="services-item__cover">
-          <h2 class="services-item__title">Макияж</h2>
+        <a href="img/portfolio/portfolio_2-3.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-3.jpg" alt="" class="portfolio-item__image">
         </a>
-  
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-1.jpg" alt="L-STUDIO - Парикмахерские услуги" class="services-item__cover">
-          <h2 class="services-item__title">Парикмахерские услуги</h2>
+        <a href="img/portfolio/portfolio_2-4.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-4.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-2.jpg" alt="L-STUDIO - Брови, ресницы" class="services-item__cover">
-          <h2 class="services-item__title">Брови, ресницы</h2>
+        <a href="img/portfolio/portfolio_2-5.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-5.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-3.jpg" alt="L-STUDIO - Маникюр и педикюр" class="services-item__cover">
-          <h2 class="services-item__title">Маникюр и педикюр</h2>
+        <a href="img/portfolio/portfolio_2-6.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-6.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-4.jpg" alt="L-STUDIO - Косметология" class="services-item__cover">
-          <h2 class="services-item__title">Косметология</h2>
+        <a href="img/portfolio/portfolio_2-7.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-7.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-5.jpg" alt="L-STUDIO - Эпиляция и депиляция" class="services-item__cover">
-          <h2 class="services-item__title">Эпиляция и депиляция</h2>
+        <a href="img/portfolio/portfolio_2-8.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-8.jpg" alt="" class="portfolio-item__image">
         </a>
-        <a href="price.html" class="services-grid__item">
-          <img src="img/service-6.jpg" alt="L-STUDIO - Макияж" class="services-item__cover">
-          <h2 class="services-item__title">Макияж</h2>
+        <a href="img/portfolio/portfolio_2-9.jpg" class="portfolio-grid__item" data-fancybox="portfolio_2">
+          <img src="img/portfolio/portfolio_2-9.jpg" alt="" class="portfolio-item__image">
         </a>
+      </div>
+      <a href="portfolio_inner.html" class="theme-button portfolio-wrapper__button">
+        <span class="theme-button__text">Посмотреть все</span>
+      </a>
+    </div>
+  </section>
+  <!-- Portfolio block -->
+  <section class="portfolio">
+    <div class="theme-wrapper portfolio-wrapper">
+      <h2 class="theme-headline portfolio-wrapper__headline">Ногтевая студия</h2>
+      <div class="portfolio-wrapper__grid">
+        <a href="img/portfolio/portfolio_3-1.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-1.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-2.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-2.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-3.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-3.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-4.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-4.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-5.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-5.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-6.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-6.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-7.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-7.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-8.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-8.jpg" alt="" class="portfolio-item__image">
+        </a>
+        <a href="img/portfolio/portfolio_3-9.jpg" class="portfolio-grid__item" data-fancybox="portfolio_3">
+          <img src="img/portfolio/portfolio_3-9.jpg" alt="" class="portfolio-item__image">
+        </a>
+      </div>
+      <a href="portfolio_inner.html" class="theme-button portfolio-wrapper__button">
+        <span class="theme-button__text">Посмотреть все</span>
+      </a>
+    </div>
+  </section>
+  <!-- Reviews -->
+  <section class="reviews">
+    <div class="theme-wrapper reviews-wrapper">
+      <h2 class="theme-headline reviews-wrapper__headline">Отзывы</h2>
+      <div class="reviews-wrapper__video">
+        <a href="#" class="reviews-video__item">
+          <img src="img/review-1.jpg" alt="" class="reviews-item__cover">
+        </a>
+        <a href="#" class="reviews-video__item">
+          <img src="img/review-2.jpg" alt="" class="reviews-item__cover">
+        </a>
+        <a href="#" class="reviews-video__item">
+          <img src="img/review-3.jpg" alt="" class="reviews-item__cover">
+        </a>
+      </div>
+      <div class="reviews-wrapper__yandex">
+        <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1931284918?comments"></iframe>
       </div>
     </div>
   </section>
@@ -204,6 +266,27 @@
 </footer>
 
 <div class="theme-overlay" data-modal-close></div>
+
+<div class="form-notification">
+  <p class="form-notification__text">Ваша заявка успешно отправлена!</p>
+  <p class="form-notification__text --error-text">Форма не отправлена. Поля заполненны некорректно.</p>
+</div>
+
+<div class="theme-modal" data-modal="nav">
+  <div class="theme-modal__head">
+    <span class="theme-modal__heading"></span>
+    <button type="button" class="theme-modal__close" data-modal-close>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" fill="none" viewBox="0 0 17 18">
+        <path stroke="#fff" stroke-linecap="round" d="m.707 1.021 15.314 16.272m-15.042 0L16.293 1.021"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="theme-modal__nav">
+  
+  </nav>
+  <a href="" class="theme-modal__phone" title="Позвоните нам"></a>
+  <a href="" class="theme-modal__phone" title="Позвоните нам"></a>
+</div>
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/jquery.mask.min.js'></script>
