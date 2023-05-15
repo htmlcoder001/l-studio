@@ -19,10 +19,10 @@
   <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/theme.css?ver=1.1.2" type="text/css" media="all">
-  <link rel="stylesheet" href="css/responsive.css?ver=1.1.5" type="text/css" media="all">
   <link rel="stylesheet" href="css/swiper.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/fancybox.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="style.css?ver=1.1.9" type="text/css" media="all">
+  <link rel="stylesheet" href="css/responsive.css?ver=1.1.5" type="text/css" media="all">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,6 @@
       <div class="nav-toggle" data-modal-toggle="nav">
         <span class="nav-toggle__line"></span>
         <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
       </div>
       <a href="#" class="header-actions__whatsapp">
         <span class="header-whatsapp__phone">+7(985)290-36-59 </span>
@@ -63,6 +62,7 @@
   <!-- Intro price -->
   <section class="intro --intro-price">
     <div class="theme-wrapper intro-wrapper">
+      <img src="img/intro-2.jpg" alt="" class="intro-wrapper__image">
       <div class="intro-wrapper__content">
         <h1 class="intro-content__title">Парикмахерские<br/> услуги</h1>
         <p class="intro-content__text">В тебе идеально всё, ты — шикарна! Так скажет каждый, кто увидит твои волосы после профессионального ухода от LEBEL.</p>
@@ -263,7 +263,7 @@
         <div class="contacts-content__info">
           <h2 class="contacts-info__headline">Контакты</h2>
           <p class="contacts-info__item --info-item-address">Дмитровское шоссе, 9, строение 3.<br/> Россия, г. Москва</p>
-          <p class="contacts-info__item --info-item-phone">+7 (985) 290-36-59&nbsp;&nbsp;&nbsp;&nbsp;+7 (499) 976-13-22</p>
+          <p class="contacts-info__item --info-item-phone"><span>+7 (985) 290-36-59</span><span>+7 (499) 976-13-22</span></p>
           <p class="contacts-info__item --info-item-mail">l-studio@lenta.ru</p>
           <p class="contacts-info__item --info-item-time">Понедельник-Воскресенье, с 10:00 до 22:00</p>
           <div class="contacts-info__socials">
@@ -292,18 +292,25 @@
 
 <div class="theme-modal" data-modal="nav">
   <div class="theme-modal__head">
-    <span class="theme-modal__heading"></span>
+    <span class="theme-modal__heading">Меню</span>
     <button type="button" class="theme-modal__close" data-modal-close>
       <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" fill="none" viewBox="0 0 17 18">
-        <path stroke="#fff" stroke-linecap="round" d="m.707 1.021 15.314 16.272m-15.042 0L16.293 1.021"/>
+        <path stroke="#1B6143" stroke-linecap="round" d="m.707 1.021 15.314 16.272m-15.042 0L16.293 1.021"/>
       </svg>
     </button>
   </div>
   <nav class="theme-modal__nav">
-  
+    <a href="index.html" class="modal-nav__item">Главная</a>
+    <a href="about.html" class="modal-nav__item">О нас</a>
+    <a href="services.html" class="modal-nav__item">Услуги</a>
+    <a href="price.html" class="modal-nav__item --active-item">Прайс</a>
+    <a href="portfolio.html" class="modal-nav__item">Наши работы</a>
+    <a href="promos.html" class="modal-nav__item">Акции</a>
+    <a href="#contacts" class="modal-nav__item">Контакты</a>
   </nav>
-  <a href="" class="theme-modal__phone" title="Позвоните нам"></a>
-  <a href="" class="theme-modal__phone" title="Позвоните нам"></a>
+  <a href="#" class="theme-button theme-modal__button">
+    <span class="theme-button__text">Заказать звонок</span>
+  </a>
 </div>
 
 <script type='text/javascript' src='js/jquery.min.js'></script>
