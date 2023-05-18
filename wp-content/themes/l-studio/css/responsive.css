@@ -331,4 +331,21 @@
     font-size: 19px;
     white-space: break-spaces;
   }
+  
+  .theme-input,
+  .theme-modal__submit {
+    width: calc(100% - 24px);
+    max-width: calc(100% - 24px);
+  }
+  
+  .modal-info__image {
+    width: 100%;
+  }
+  
+  .theme-modal__info {
+    width: calc(100% - 24px);
+    max-width: calc(100% - 24px);
+    flex-direction: column;
+    gap: 12px;
+  }
 }

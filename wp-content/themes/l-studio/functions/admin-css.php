@@ -325,6 +325,13 @@ function webt_admin_bar_css() {
   ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:after {
     display: none!important;
   }
+
+
+
+
+  .components-base-control.ej5x27r4 {
+
+  }
 </style>
 
   <?php }

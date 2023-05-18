@@ -10,6 +10,7 @@ function remove_menus(){
     remove_menu_page( 'edit.php' );                                        // Записи
     remove_menu_page( 'edit.php?post_type=lazyblocks' );                   // Записи
     remove_menu_page( 'edit.php?post_type=webt-reviews' );                 // Записи
+    remove_menu_page( 'edit.php?post_type=webt-portfolio' );                 // Записи
     remove_menu_page( 'edit.php?post_type=webt-team' );                 // Записи
     remove_menu_page( 'edit.php?post_type=blog' );                         // Записи
     remove_menu_page( 'edit.php?post_type=webt-faq' );                     // Записи

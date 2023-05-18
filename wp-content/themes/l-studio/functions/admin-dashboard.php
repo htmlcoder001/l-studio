@@ -21,8 +21,8 @@ function fast_links_widget()
         <a href="/wp-admin/edit.php?post_type=webt-team" class="webt-dashboard-list__link">Сотрудники</a>
       </li>
       <li class="webt-dashboard-list__item">
-        <span class="webt-dashboard-list__icon dashicons dashicons-admin-comments"></span>
-        <a href="/wp-admin/edit.php?post_type=webt-reviews" class="webt-dashboard-list__link">Отзывы</a>
+        <span class="webt-dashboard-list__icon dashicons dashicons-format-image"></span>
+        <a href="/wp-admin/edit.php?post_type=webt-portfolio" class="webt-dashboard-list__link">Портфолио</a>
       </li>
     </ul>
   ';

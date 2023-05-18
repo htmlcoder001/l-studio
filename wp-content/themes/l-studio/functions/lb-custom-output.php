@@ -8,8 +8,18 @@
 $webt_blocks = [
 	'webt-intro-banner',
 	'webt-plitka-izobrazheniya-i-tekst',
-
-
+	'webt-nashi-uslugi',
+	'webt-prizyv-k-dejstviyu',
+	'webt-nashi-akcii',
+	'webt-bolshoj-zagolovok',
+	'webt-blok-s-tekstom',
+	'webt-galereya-foto',
+	'webt-numerovannye-bloki',
+	'webt-nashi-sotrudniki',
+	'webt-otzyvy',
+	'webt-prajs-blok',
+	'webt-blok-s-cenoj',
+	'webt-portfolio',
 ];
 
 foreach ($webt_blocks as $block) {

@@ -29,8 +29,8 @@ $phone_2_link = 'tel:+' . preg_replace("/[^0-9]/", "", $phone_2);
         <div class="contacts-info__socials">
           <span class="contacts-socials__title">Подписывайся на наши соц сети:</span>
           <div class="contacts-socials__box">
-            <a href="<?php echo $social_vk; ?>" class="contacts-socials__item --socials-vk"></a>
-            <a href="<?php echo $social_yt; ?>" class="contacts-socials__item --socials-yt"></a>
+            <a href="<?php echo $social_vk; ?>" class="contacts-socials__item --socials-vk" target="_blank"></a>
+            <a href="<?php echo $social_yt; ?>" class="contacts-socials__item --socials-yt" target="_blank"></a>
           </div>
         </div>
       </div>

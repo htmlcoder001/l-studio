@@ -52,6 +52,7 @@
     </a>
     <nav class="header-wrapper__nav">
       <?php echo strip_tags(wp_nav_menu( $nav_args ), '<a>' ); ?>
+      <a <?php if ('/promos/' == $_SERVER['REQUEST_URI']) { echo 'aria-current="page"'; } ?> href="/promos/" class="header-nav__item">Акции</a>
       <a href="#contacts" class="header-nav__item">Контакты</a>
     </nav>
     <div class="header-wrapper__actions">

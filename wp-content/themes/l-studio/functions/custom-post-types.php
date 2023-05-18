@@ -35,16 +35,16 @@ function webt_custom_posts() {
     )
   );
 
-  /* Отзывы */
-  register_post_type( 'webt-reviews',
+  /* Портфолио */
+  register_post_type( 'webt-portfolio',
     array(
       'labels' => array(
-        'name' => __( 'Отзывы' ),
-        'singular_name' => __( 'Отзывы' )
+        'name' => __( 'Портфолио' ),
+        'singular_name' => __( 'Портфолио' )
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array('slug' => 'reviews'),
+      'rewrite' => array('slug' => 'portfolio'),
       'show_in_rest' => true,
 
     )

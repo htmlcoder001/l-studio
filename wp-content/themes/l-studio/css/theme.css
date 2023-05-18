@@ -160,7 +160,9 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1010;
   
-  border: 2px solid var(--theme-color)
+  border: 2px solid var(--theme-color);
+  
+  overflow: hidden;
 }
 .theme-modal.--modal-show {
   opacity: 1;
@@ -171,6 +173,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+  
+  position: relative;
+  z-index: 1;
 }
 .theme-modal__heading {
   font-family: var(--theme-secondary-font);
@@ -211,10 +216,16 @@ body {
   text-align: center;
   align-items: center;
   gap: 12px;
+  
+  position: relative;
+  z-index: 1;
 }
 .modal-nav__item,
 .modal-nav__item:focus,
-.modal-nav__item:active {
+.modal-nav__item:active,
+.theme-modal__nav > a,
+.theme-modal__nav > a:focus,
+.theme-modal__nav > a:active {
   position: relative;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -229,10 +240,12 @@ body {
   text-transform: uppercase;
   color: #343434;
 }
-.modal-nav__item:hover {
+.modal-nav__item:hover,
+.theme-modal__nav > a:hover {
   color: var(--hover-color);
 }
-.modal-nav__item:after {
+.modal-nav__item:after,
+.theme-modal__nav > a:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -241,7 +254,8 @@ body {
   background-color: transparent;
   height: 3px;
 }
-.modal-nav__item.--active-item {
+.modal-nav__item.--active-item,
+.theme-modal__nav > a[aria-current] {
   margin-bottom: 4px;
 }
 
@@ -251,6 +265,9 @@ body {
   height: 43px;
   
   display: none;
+  
+  position: relative;
+  z-index: 1;
 }
 .theme-modal__button .theme-button__text {
   font-size: 12px;
@@ -260,4 +277,140 @@ body {
 button[type="submit"].--disabled-button {
   pointer-events: none;
   opacity: 0.75;
+}
+
+.theme-input {
+  font-family: var(--theme-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 147.3%;
+  color: #6B6B6B;
+  width: 280px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid rgb(133, 133, 133);
+  margin: 0 auto;
+}
+.theme-input + .theme-input {
+  margin-top: 8px;
+}
+.theme-input:focus {
+  outline: 2px solid var(--theme-color)
+}
+.theme-modal__text {
+  font-family: var(--theme-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 147.3%;
+  color: #343434;
+  text-align: center;
+  max-width: 300px;
+  margin: 24px auto;
+  position: relative;
+  z-index: 1;
+}
+.theme-modal__submit,
+.theme-modal__submit:focus,
+.theme-modal__submit:active {
+  margin: 12px auto 0 auto;
+  width: 280px;
+  height: 54px;
+}
+
+.theme-modal:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/shapes/shape-3.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  top: -12px;
+  left: -42px;
+  
+  opacity: 0.7;
+}
+
+.theme-modal:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 115px;
+  height: 245px;
+  background-image: url(../img/shapes/shape-4.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  bottom: 12px;
+  right: 0;
+  
+  opacity: 0.7;
+}
+
+.theme-modal__form {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-modal__info {
+  max-width: 290px;
+  margin: 24px auto;
+  position: relative;
+  z-index: 1;
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+.modal-info__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.modal-info__title {
+
+}
+.modal-info__title > span:first-child {
+  font-family: var(--theme-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #343434;
+  display: block;
+}
+.modal-info__title > span:last-child {
+  font-family: var(--theme-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #343434;
+  text-align: left;
+  display: block;
+  margin-top: 4px;
+}
+
+.promo-modal {
+
+}
+.promo-modal .theme-modal__head {
+
+}
+.promo-modal .theme-modal__form {
+
 }

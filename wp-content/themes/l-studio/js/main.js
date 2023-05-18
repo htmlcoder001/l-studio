@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     close_modal: document.querySelectorAll('[data-modal-close]'),
     project_images: document.querySelectorAll('.js-scrollable-image'),
     tooltip_links: document.querySelectorAll('.js-tooltip'),
+    promo_buttons: document.querySelectorAll('[data-modal-toggle="promo"]'),
     ajax_forms: document.querySelectorAll('.ajax-form')
   };
 
@@ -86,6 +87,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })();
 
+  /* Promo modal */
+  (() => {
+    if (typeof WebT.elements.promo_buttons !== 'undefined' || WebT.elements.promo_buttons !== null) {
+      for (let i=0; i < WebT.elements.promo_buttons.length; i++) {
+        WebT.elements.promo_buttons[i].addEventListener('click', () => {
+          let promo_title = WebT.elements.promo_buttons[i].getAttribute('data-promo-name'),
+              promo_text = WebT.elements.promo_buttons[i].getAttribute('data-promo-text'),
+              promo_image = WebT.elements.promo_buttons[i].getAttribute('data-promo-image');
+
+          document.getElementById('modal_promo_name').textContent = promo_title;
+          document.getElementById('modal_promo_text').textContent = promo_text;
+          document.getElementById('modal_promo_type').setAttribute('value', promo_title);
+          document.getElementById('modal_promo_image').setAttribute('src', promo_image);
+          document.getElementById('modal_promo_image').setAttribute('alt', 'L-STUDIO - ' + promo_title);
+        });
+      }
+    }
+  })();
+
   /* Promo carousel */
   (() => {
     let promo_carousel =  '#promo_carousel';
@@ -111,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   })();
 
-  /* Promo carousel */
+  /* Team carousel */
   (() => {
     let team_carousel =  '#team_carousel';
     let swiper = new Swiper(team_carousel, {
@@ -195,6 +215,11 @@ document.addEventListener("DOMContentLoaded", () => {
         form_button.setAttribute('disabled', 'disabled');
       }, false);
     }
+  })();
+
+  /* todo: Contacts click */
+  (() => {
+
   })();
   
   /* Functions init */

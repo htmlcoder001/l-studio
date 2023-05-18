@@ -9,27 +9,37 @@ $webt_grid = array(
   'subheading' => $attributes['podzagolovok'],
   'text_1' => $attributes['abzac-1'],
   'text_2' => $attributes['abzac-2'],
-  'images' => $attributes['zagolovok'],
-  'button' => $attributes['zagolovok'],
-  'button_text' => $attributes['zagolovok'],
+  'images' => $attributes['izobrazheniya'],
+  'button' => $attributes['knopka-posle-teksta'],
+  'button_text' => $attributes['tekst-v-knopke'],
+  'button_link' => $attributes['ssylka-v-knopke'],
 );
 ?>
 
-<!-- Intro banner -->
-<section class="intro">
-  <div class="theme-wrapper intro-wrapper">
-    <img src="<?php echo $webt_intro_banner['cover']['url']; ?>" alt="L-STUDIO - <?php echo $webt_intro_banner['cover']['url']; ?>" class="intro-wrapper__image">
-    <div class="intro-wrapper__content">
-      <h1 class="intro-content__title"><?php echo $webt_intro_banner['heading']; ?></h1>
-      <p class="intro-content__text"><?php echo $webt_intro_banner['text']; ?></p>
-      <div class="intro-content__actions">
-        <a href="#" class="intro-content__button theme-button">
-          <span class="theme-button__text"><?php echo $webt_intro_banner['button_text']; ?></span>
-        </a>
-        <?php if (!empty($webt_intro_banner['sale_text'])) { ?>
-        <span class="intro-actions__sale"><?php echo $webt_intro_banner['sale_text']; ?></span>
-        <?php } ?>
+<!-- Media grid -->
+<section class="about">
+  <div class="theme-wrapper about-wrapper">
+    <h2 class="theme-headline about-wrapper__headline"><?php echo $webt_grid['heading']; ?></h2>
+    <div class="about-wrapper__grid">
+      <div class="about-grid__item">
+        <img src="<?php echo $webt_grid['images'][0]['url']; ?>" alt="L-STUDIO - <?php echo $webt_grid['heading']; ?> - Фото 1" class="about-item__img">
+        <div class="about-item__content">
+          <h3 class="about-content__heading"><?php echo $webt_grid['subheading']; ?></h3>
+          <p class="about-content__text theme-text"><?php echo $webt_grid['text_1']; ?></p>
+        </div>
+      </div>
+      <div class="about-grid__item --about-item-bottom">
+        <div class="about-item__content">
+          <p class="about-content__text theme-text"><?php echo $webt_grid['text_2']; ?></p>
+          <img src="<?php echo $webt_grid['images'][1]['url']; ?>" alt="L-STUDIO - <?php echo $webt_grid['heading']; ?> - Фото 2" class="about-content__img">
+        </div>
+        <img src="<?php echo $webt_grid['images'][2]['url']; ?>" alt="L-STUDIO - <?php echo $webt_grid['heading']; ?> - Фото 3" class="about-item__img">
       </div>
     </div>
+    <?php if (!empty($webt_grid['button'])) { ?>
+      <a href="<?php echo $webt_grid['button_link']; ?>" class="about-wrapper__button theme-button">
+        <span class="theme-button__text"><?php echo $webt_grid['button_text']; ?></span>
+      </a>
+    <?php } ?>
   </div>
 </section>
