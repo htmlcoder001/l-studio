@@ -6,10 +6,10 @@
 
 function webt_sources()
 {
-  $main_css_version = '1.6.0';
-  $theme_css_version = '1.2.4';
-  $main_js_version = '1.3.3';
-  $responsive_css_version = '1.2.3';
+  $main_css_version = '1.6.5';
+  $theme_css_version = '1.2.5';
+  $main_js_version = '1.3.5';
+  $responsive_css_version = '1.2.6';
 
   /* CSS */
   wp_enqueue_style('webt-common', get_template_directory_uri() . '/css/common.css');

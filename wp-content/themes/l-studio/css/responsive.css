@@ -309,6 +309,10 @@
   .pricelist-li__value {
     text-align: right;
   }
+  
+  .theme-headline > span {
+    display: block;
+  }
 }
 
 /* Phone - 320px */

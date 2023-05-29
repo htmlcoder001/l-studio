@@ -847,13 +847,16 @@ footer {
 }
 .pricelist-wrapper__grid {
   display: grid;
-  justify-content: center;
-  align-items: stretch;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px 20px;
+  justify-content: center;
+  align-items: start;
+  grid-gap: 24px;
+  grid-auto-rows: 48px;
 }
 .pricelist-grid__item {
   border: 1px solid #DCDCDC;
+  
+  width: 100%;
 }
 .pricelist-item__title {
   height: 74px;
@@ -895,11 +898,12 @@ footer {
   width: 100%;
 }
 .pricelist-li__name {
-
+  padding-right: 16px;
 }
 .pricelist-li__value {
   font-size: 16px;
   line-height: 20px;
+  white-space: nowrap;
 }
 .pricelist-wrapper__button {
   margin: 40px auto 0 auto;
